@@ -1232,6 +1232,11 @@ body {
   line-height: 1.9;
 }
 
+.shop-link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
 /* お問い合わせ（簡易版） */
 .contact-content-simple {
   max-width: 800px;

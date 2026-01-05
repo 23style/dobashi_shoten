@@ -1360,7 +1360,47 @@ body {
     grid-template-columns: 1fr;
   }
 
+  /* 事業内容の画像を中央寄せ */
   .service-images {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .service-img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  /* ご挨拶と商品紹介の間隔を狭く */
+  .message-section {
+    padding-bottom: 40px;
+  }
+
+  .products-section {
+    padding-top: 40px;
+  }
+
+  /* 商品紹介の画像を中央寄せ */
+  .product-images {
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  /* 実店舗紹介の写真を中央寄せ */
+  .shop-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .shop-img {
+    max-width: 400px;
+    width: 100%;
   }
 }

@@ -1360,10 +1360,34 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* 事業内容の画像を中央寄せ */
+  /* 事業内容: タイトル→画像→文章の順に表示・中央寄せ */
+  .service-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-text {
+    display: contents;  /* 子要素を直接の子として扱う */
+  }
+
+  .service-text h3 {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
   .service-images {
+    order: 2;
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
     justify-items: center;
+    margin-bottom: 30px;
+    align-self: center;
+    width: 100%;
+  }
+
+  .service-text p {
+    order: 3;
   }
 
   .service-img {
@@ -1380,12 +1404,33 @@ body {
     padding-top: 40px;
   }
 
-  /* 商品紹介の画像を中央寄せ */
+  /* 商品紹介: タイトル→画像→文章の順に表示・中央寄せ */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-content {
+    display: contents;  /* 子要素を直接の子として扱う */
+  }
+
+  .product-content h3 {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
   .product-images {
-    justify-items: center;
+    order: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
+    align-self: center;
+    width: 100%;
+  }
+
+  .product-content p {
+    order: 3;
   }
 
   .product-img {

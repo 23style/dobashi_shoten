@@ -1000,6 +1000,10 @@ body {
     font-size: 2.5rem;
   }
 
+  .title-line:nth-child(1) {
+    font-size: 2.5rem;
+  }
+
   .title-line.main-title {
     font-size: 3rem;
   }
@@ -1219,7 +1223,7 @@ body {
   position: absolute;
   left: -2px;
   top: -2px;
-  bottom: -2px;
+  bottom: -2.5px;
   width: 80px;
   background: #e74c3c;
   clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);

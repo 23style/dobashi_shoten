@@ -37,9 +37,10 @@ body {
 .section-title {
   font-family: "Zen Antique", serif;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 100;
+  letter-spacing: 0.2em;
   color: #2c2c2c;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s ease forwards;
@@ -47,7 +48,7 @@ body {
 }
 
 .title-underline {
-  width: 120px;
+  width: 180px;
   height: 1px;
   background: #e74c3c;
   margin: 0 auto;
@@ -1322,10 +1323,12 @@ body {
 
 .service-text h3 {
   font-size: 1.8rem;
-  color: #e74c3c;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  color: #2c2c2c;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e74c3c;
+  border-bottom: 2px solid #2c2c2c;
 }
 
 .service-text p {
@@ -1376,7 +1379,7 @@ body {
   }
 
   .service-text {
-    display: contents;  /* 子要素を直接の子として扱う */
+    display: contents; /* 子要素を直接の子として扱う */
   }
 
   .service-text h3 {
@@ -1420,7 +1423,7 @@ body {
   }
 
   .product-content {
-    display: contents;  /* 子要素を直接の子として扱う */
+    display: contents; /* 子要素を直接の子として扱う */
   }
 
   .product-content h3 {

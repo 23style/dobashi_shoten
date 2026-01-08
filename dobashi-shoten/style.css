@@ -84,6 +84,23 @@ body {
   animation: shimmer 2s infinite;
 }
 
+/* 下線の長さ個別設定 */
+.title-underline-short {
+  width: 100px;
+}
+
+.title-underline-shorter {
+  width: 130px;
+}
+
+.title-underline-longer {
+  width: 220px;
+}
+
+.title-underline-long {
+  width: 280px;
+}
+
 /* ナビゲーション */
 .navbar {
   position: fixed;

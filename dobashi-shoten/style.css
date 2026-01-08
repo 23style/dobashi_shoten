@@ -1190,10 +1190,26 @@ body {
 
 .product-content h3 {
   font-size: 1.8rem;
-  color: #2c2c2c;
+  color: white;
   margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #e74c3c;
+  padding: 00px 20px 0px 30px;
+  border: 2px solid #293345;
+  background: #293345;
+  position: relative;
+  z-index: 0;
+}
+
+/* 左側の斜線部分 */
+.product-content h3::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  bottom: -2px;
+  width: 80px;
+  background: #e74c3c;
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+  z-index: -1;
 }
 
 .product-content p {

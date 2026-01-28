@@ -1102,7 +1102,7 @@ body {
   }
 }
 
-/* 沿革セクション */
+/* 沿革セクション（現在非表示）
 .history-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
@@ -1181,6 +1181,7 @@ body {
   color: #555;
   line-height: 1.8;
 }
+*/
 
 /* 商品紹介セクション */
 .products-section {
@@ -1399,18 +1400,20 @@ body {
   border-top: 1px solid #e0e0e0;
 }
 
+/* fadeInLeft: 沿革セクション用（現在非表示）
 @keyframes fadeInLeft {
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+*/
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-  .history-timeline {
+  /* .history-timeline {
     padding-left: 40px;
-  }
+  } */
 
   .product-card {
     grid-template-columns: 1fr;

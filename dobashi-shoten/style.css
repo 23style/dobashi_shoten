@@ -992,7 +992,7 @@ body {
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(9px) translateX(0px);
+    transform: rotate(45deg) translateY(10px) translateX(0px);
   }
 
   .hamburger.active span:nth-child(2) {
@@ -1000,7 +1000,7 @@ body {
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-9px) translateX(0px);
+    transform: rotate(-45deg) translateY(-10px) translateX(0px);
   }
 
   .hero {
@@ -1280,6 +1280,11 @@ body {
   margin-bottom: 20px;
 }
 
+.dclub-logo {
+  height: 40px;
+  width: auto;
+}
+
 .shop-text p {
   color: #555;
   margin-bottom: 15px;
@@ -1484,6 +1489,7 @@ body {
   .product-content h3 {
     order: 1;
     margin-bottom: 20px;
+    align-self: center; /* ★追加：中央配置にする */
   }
 
   .product-images {

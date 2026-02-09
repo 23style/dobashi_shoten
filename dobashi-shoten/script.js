@@ -1,5 +1,20 @@
 // DOM読み込み完了後に実行
 document.addEventListener('DOMContentLoaded', function() {
+    // スライドショー機能
+    const slides = document.querySelectorAll('.hero-slideshow .slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // 4秒ごとに切り替え
+        setInterval(nextSlide, 4000);
+    }
+
     // ナビゲーション要素の取得
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -266,46 +281,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 1秒ごとに時計を更新
     setInterval(updateClock, 1000);
-
-    // 背景パーティクル効果
-    function createParticle() {
-        const particle = document.createElement('div');
-        particle.style.cssText = `
-            position: fixed;
-            width: 4px;
-            height: 4px;
-            background: #e74c3c;
-            border-radius: 50%;
-            pointer-events: none;
-            opacity: 0.3;
-            z-index: -1;
-            animation: float-particle 4s linear infinite;
-        `;
-
-        particle.style.left = Math.random() * window.innerWidth + 'px';
-        particle.style.top = window.innerHeight + 'px';
-
-        document.body.appendChild(particle);
-
-        setTimeout(() => {
-            particle.remove();
-        }, 4000);
-    }
-
-    // パーティクルのCSSアニメーションを追加
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes float-particle {
-            to {
-                transform: translateY(-${window.innerHeight + 100}px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-    `;
-    document.head.appendChild(style);
-
-    // 定期的にパーティクルを生成
-    setInterval(createParticle, 3000);
 
     // ページ読み込み完了時のウェルカムアニメーション
     setTimeout(() => {

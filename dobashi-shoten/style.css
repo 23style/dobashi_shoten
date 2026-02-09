@@ -158,10 +158,25 @@ body {
 }
 
 .company-name {
-  font-family: "Zen Antique", serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-prefix {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.company-main {
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
-  color: #2c2c2c;
+  font-weight: 500;
+  color: #000000;
   letter-spacing: 0.1em;
 }
 
@@ -218,31 +233,56 @@ body {
 /* ヒーローセクション */
 .hero {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 0 50px;
   position: relative;
-  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
+/* スライドショー */
+.hero-slideshow {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="tatami" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="none" stroke="%23e74c3c" stroke-width="0.2" opacity="0.1"/><line x1="0" y1="20" x2="40" y2="20" stroke="%23e74c3c" stroke-width="0.1" opacity="0.1"/></pattern></defs><rect width="200" height="200" fill="url(%23tatami)"/></svg>');
-  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* .hero-overlay と .hero-content は現在非表示
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .hero-content {
   max-width: 600px;
   z-index: 2;
+  text-align: center;
+  color: white;
 }
+*/
 
 .hero-title {
   font-family: "Zen Antique", serif;
@@ -263,7 +303,7 @@ body {
 
 .title-line:nth-child(1) {
   font-size: 3rem;
-  color: #666;
+  color: #fff;
   animation-delay: 0.2s;
 }
 
@@ -288,7 +328,7 @@ body {
 
 .hero-subtitle {
   font-size: 1.3rem;
-  color: #666;
+  color: #fff;
   margin-bottom: 40px;
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.8s forwards;
@@ -1367,7 +1407,7 @@ body {
 
 .service-images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 30px;
 }

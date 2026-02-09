@@ -6,7 +6,7 @@
     <title>有限会社土橋商店</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Antique&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Antique&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,7 +22,10 @@
           <div class="logo-wrap">
             <img src="img/doashi01.png" alt="土橋商店ロゴ" class="logo-img" />
           </div>
-          <span class="company-name">土橋商店</span>
+          <div class="company-name">
+            <span class="company-prefix">会津<br>ぬり</span>
+            <span class="company-main">漆器製造販売元</span>
+          </div>
         </div>
         <ul class="nav-menu">
           <li><a href="#message" class="nav-link">ご挨拶</a></li>
@@ -42,24 +45,10 @@
 
     <!-- ヒーローセクション -->
     <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1 class="hero-title">
-          <span class="title-line">有限会社</span>
-          <span class="title-line main-title">土橋商店</span>
-        </h1>
-        <p class="hero-subtitle">人生の節目に寄り添う、会津漆器。</p>
-        <div class="hero-buttons">
-          <a href="#about" class="btn btn-primary"> 会社概要 </a>
-          <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img
-          src="img/dobashi02.jpg"
-          alt="土橋商店メイン画像"
-          class="floating-image"
-        />
+      <div class="hero-slideshow">
+        <div class="slide active" style="background-image: url('img/top1.jpg')"></div>
+        <div class="slide" style="background-image: url('img/top2.jpg')"></div>
+        <div class="slide" style="background-image: url('img/top3.jpg')"></div>
       </div>
     </section>
 

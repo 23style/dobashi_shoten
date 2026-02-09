@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Noto Serif JP", serif;
   line-height: 1.8;
-  color: #2c2c2c;
+  color: #000000;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ body {
   font-size: 2.5rem;
   font-weight: 100;
   letter-spacing: 0.2em;
-  color: #2c2c2c;
+  color: #000000;
   margin-bottom: 5px;
   opacity: 0;
   transform: translateY(30px);
@@ -132,8 +132,8 @@ body {
 }
 
 .logo-wrap {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -154,7 +154,7 @@ body {
 }
 
 .logo-wrap:hover {
-  transform: scale(1.1) rotate(-7deg);
+  transform: scale(1.1) rotate(-10deg);
 }
 
 .company-name {
@@ -164,18 +164,18 @@ body {
 }
 
 .company-prefix {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Kiwi Maru";
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 450;
   color: #000000;
   line-height: 1.2;
   letter-spacing: 0.05em;
 }
 
 .company-main {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Kiwi Maru";
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 450;
   color: #000000;
   letter-spacing: 0.1em;
 }
@@ -188,7 +188,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #2c2c2c;
+  color: #000000;
   font-weight: 400;
   position: relative;
   transition: color 0.3s ease;
@@ -258,7 +258,7 @@ body {
   background-repeat: no-repeat;
   background-color: #fafafa;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 
 .slide.active {
@@ -309,7 +309,7 @@ body {
 
 .title-line.main-title {
   font-size: 4.5rem;
-  color: #2c2c2c;
+  color: #e74c3c;
   animation-delay: 0.5s;
   position: relative;
 }
@@ -470,7 +470,7 @@ body {
 
 .company-info-table td {
   padding: 20px 30px;
-  color: #555;
+  color: #000000;
   border-bottom: 1px solid #f0f0f0;
   font-size: 1rem;
 }
@@ -485,7 +485,7 @@ body {
 }
 
 .info-item p {
-  color: #666;
+  color: #000000;
   line-height: 1.8;
 }
 
@@ -582,13 +582,13 @@ body {
   font-family: "Zen Antique", serif;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #2c2c2c;
+  color: #000000;
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
 
 .service-card p {
-  color: #666;
+  color: #000000;
   line-height: 1.8;
 }
 
@@ -633,7 +633,7 @@ body {
 
 .message-description {
   font-size: 1.1rem;
-  color: #666;
+  color: #000000;
   line-height: 1.9;
   margin-bottom: 20px;
 }
@@ -699,7 +699,7 @@ body {
 }
 
 .access-item p {
-  color: #666;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -1032,7 +1032,7 @@ body {
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(10px) translateX(0px);
+    transform: rotate(45deg) translateY(9px) translateX(0px);
   }
 
   .hamburger.active span:nth-child(2) {
@@ -1040,7 +1040,7 @@ body {
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-10px) translateX(0px);
+    transform: rotate(-45deg) translateY(-9px) translateX(0px);
   }
 
   .hero {
@@ -1218,7 +1218,7 @@ body {
 }
 
 .timeline-content p {
-  color: #555;
+  color: #000000;
   line-height: 1.8;
 }
 */
@@ -1290,7 +1290,7 @@ body {
 }
 
 .product-content p {
-  color: #555;
+  color: #000000;
   margin-bottom: 15px;
   line-height: 1.9;
 }
@@ -1326,7 +1326,7 @@ body {
 }
 
 .shop-text p {
-  color: #555;
+  color: #000000;
   margin-bottom: 15px;
   line-height: 1.9;
 }
@@ -1346,7 +1346,7 @@ body {
 .contact-content-simple h3 {
   font-size: 1.8rem;
   margin-bottom: 40px;
-  color: #2c2c2c;
+  color: #000000;
 }
 
 .contact-content-simple .contact-methods {
@@ -1378,11 +1378,11 @@ body {
 .contact-content-simple .contact-method h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #2c2c2c;
+  color: #000000;
 }
 
 .contact-content-simple .contact-method p {
-  color: #555;
+  color: #000000;
   font-size: 1rem;
 }
 
@@ -1423,14 +1423,14 @@ body {
   font-size: 1.8rem;
   font-weight: 200;
   letter-spacing: 0.2em;
-  color: #2c2c2c;
+  color: #000000;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #2c2c2c;
+  border-bottom: 2px solid #000000;
 }
 
 .service-text p {
-  color: #555;
+  color: #000000;
   margin-bottom: 15px;
   line-height: 1.9;
 }
@@ -1439,7 +1439,7 @@ body {
 .message-signature {
   margin-top: 30px;
   font-weight: 600;
-  color: #2c2c2c;
+  color: #000000;
   text-align: right;
   padding-top: 20px;
   border-top: 1px solid #e0e0e0;
@@ -1529,7 +1529,6 @@ body {
   .product-content h3 {
     order: 1;
     margin-bottom: 20px;
-    align-self: center; /* ★追加：中央配置にする */
   }
 
   .product-images {

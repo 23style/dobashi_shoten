@@ -1032,7 +1032,7 @@ body {
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(9px) translateX(0px);
+    transform: rotate(45deg) translateY(10px) translateX(0px);
   }
 
   .hamburger.active span:nth-child(2) {
@@ -1040,7 +1040,7 @@ body {
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-9px) translateX(0px);
+    transform: rotate(-45deg) translateY(-10px) translateX(0px);
   }
 
   .hero {
@@ -1559,5 +1559,11 @@ body {
   .shop-img {
     max-width: 400px;
     width: 100%;
+  }
+
+  /* Dclubへのリンクボタンを中央に配置 */
+  .shop-link {
+    display: block;
+    text-align: center;
   }
 }

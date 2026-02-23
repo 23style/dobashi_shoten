@@ -1174,7 +1174,10 @@ body {
 
   .footer-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 1px;
+  }
+  .footer {
+    padding: 7px 0;
   }
 }
 

@@ -1078,6 +1078,10 @@ body {
     transform: rotate(-45deg) translateY(-10px) translateX(0px);
   }
 
+  .nav-logo-img {
+    height: 35px;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;

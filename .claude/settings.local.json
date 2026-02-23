@@ -3,7 +3,8 @@
     "allow": [
       "Bash(dir /B /S \"C:\\myWork\\dev\\dobashi_shoten\")",
       "Bash(python:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(dir:*)"
     ]
   }
 }

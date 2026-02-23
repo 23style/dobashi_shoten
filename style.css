@@ -232,9 +232,11 @@ body {
 
 /* ヒーローセクション */
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
+  margin-top: 105px;
+  margin-bottom: 15px;
 }
 
 /* スライドショー */
@@ -848,7 +850,7 @@ body {
 
 /* フッター */
 .footer {
-  background: #2c3e50;
+  background: #000000;
   color: white;
   padding: 40px 0;
   text-align: center;

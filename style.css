@@ -293,6 +293,11 @@ body {
   transition: opacity 1.5s ease-in-out;
 }
 
+/* PC用スライド背景画像 */
+.slide-1 { background-image: url("img/top1.jpg"); }
+.slide-2 { background-image: url("img/top2.jpg"); }
+.slide-3 { background-image: url("img/top3.jpg"); }
+
 .slide.active {
   opacity: 1;
 }
@@ -1034,10 +1039,10 @@ body {
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
-    top: 80px;
+    top: 65px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 65px);
     background-image: url("img/nav_bg.jpg");
     background-size: cover;
     background-position: center;
@@ -1059,7 +1064,8 @@ body {
   }
 
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
   }
 
   .hamburger {
@@ -1082,9 +1088,10 @@ body {
     height: 35px;
   }
 
-  .slide:nth-child(1) { background-image: url("img/top1_m.jpg"); }
-  .slide:nth-child(2) { background-image: url("img/top2_m.jpg"); }
-  .slide:nth-child(3) { background-image: url("img/top3_m.jpg"); }
+  /* モバイル用スライド背景画像に切り替え */
+  .slide-1 { background-image: url("img/top1_m.jpg"); }
+  .slide-2 { background-image: url("img/top2_m.jpg"); }
+  .slide-3 { background-image: url("img/top3_m.jpg"); }
 
   .hero {
     flex-direction: column;

@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const target = document.querySelector(this.getAttribute("href"));
 
       if (target) {
-        const offsetTop = target.offsetTop - 80; // ナビバーの高さを考慮
+        const offsetTop = target.offsetTop - navbar.offsetHeight; // ナビバーの高さを動的取得
 
         window.scrollTo({
           top: offsetTop,
